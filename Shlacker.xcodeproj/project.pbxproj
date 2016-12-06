@@ -12,9 +12,14 @@
 		AC3FEF8D1DF6D91400054F91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3FEF8B1DF6D91400054F91 /* Main.storyboard */; };
 		AC3FEF8F1DF6D91400054F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3FEF8E1DF6D91400054F91 /* Assets.xcassets */; };
 		AC3FEF921DF6D91400054F91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3FEF901DF6D91400054F91 /* LaunchScreen.storyboard */; };
+		AC3FEF9A1DF6D9B900054F91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC3FEF991DF6D9B900054F91 /* GoogleService-Info.plist */; };
+		CF438562A215ED9EA6A88F63 /* Pods_Shlacker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F390EA60D09D4CF47444AD3 /* Pods_Shlacker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		326AB6CDF3CCE2161620BDCA /* Pods-Shlacker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shlacker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shlacker/Pods-Shlacker.debug.xcconfig"; sourceTree = "<group>"; };
+		8F390EA60D09D4CF47444AD3 /* Pods_Shlacker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shlacker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B66F1A5D11322DCA48F195 /* Pods-Shlacker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shlacker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shlacker/Pods-Shlacker.release.xcconfig"; sourceTree = "<group>"; };
 		AC3FEF841DF6D91400054F91 /* Shlacker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shlacker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3FEF871DF6D91400054F91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3FEF891DF6D91400054F91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		AC3FEF8E1DF6D91400054F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3FEF911DF6D91400054F91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3FEF931DF6D91400054F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC3FEF991DF6D9B900054F91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF438562A215ED9EA6A88F63 /* Pods_Shlacker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B8A0B97C103475F9353675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F390EA60D09D4CF47444AD3 /* Pods_Shlacker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4CB635BAEDC10DF724231BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				326AB6CDF3CCE2161620BDCA /* Pods-Shlacker.debug.xcconfig */,
+				A3B66F1A5D11322DCA48F195 /* Pods-Shlacker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC3FEF7B1DF6D91300054F91 = {
 			isa = PBXGroup;
 			children = (
 				AC3FEF861DF6D91400054F91 /* Shlacker */,
 				AC3FEF851DF6D91400054F91 /* Products */,
+				A4CB635BAEDC10DF724231BC /* Pods */,
+				28B8A0B97C103475F9353675 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,39 @@
 		AC3FEF861DF6D91400054F91 /* Shlacker */ = {
 			isa = PBXGroup;
 			children = (
+				AC3FEF9B1DF6E11500054F91 /* Model */,
+				AC3FEF9E1DF6E16600054F91 /* Controller */,
+				AC3FEF9D1DF6E13B00054F91 /* View */,
 				AC3FEF871DF6D91400054F91 /* AppDelegate.swift */,
-				AC3FEF891DF6D91400054F91 /* ViewController.swift */,
 				AC3FEF8B1DF6D91400054F91 /* Main.storyboard */,
 				AC3FEF8E1DF6D91400054F91 /* Assets.xcassets */,
 				AC3FEF901DF6D91400054F91 /* LaunchScreen.storyboard */,
 				AC3FEF931DF6D91400054F91 /* Info.plist */,
+				AC3FEF991DF6D9B900054F91 /* GoogleService-Info.plist */,
 			);
 			path = Shlacker;
+			sourceTree = "<group>";
+		};
+		AC3FEF9B1DF6E11500054F91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC3FEF9D1DF6E13B00054F91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AC3FEF9E1DF6E16600054F91 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC3FEF891DF6D91400054F91 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC3FEF961DF6D91400054F91 /* Build configuration list for PBXNativeTarget "Shlacker" */;
 			buildPhases = (
+				A98D85AA7F17597C9E781686 /* [CP] Check Pods Manifest.lock */,
 				AC3FEF801DF6D91400054F91 /* Sources */,
 				AC3FEF811DF6D91400054F91 /* Frameworks */,
 				AC3FEF821DF6D91400054F91 /* Resources */,
+				3F23381B93EF83D1E6C70841 /* [CP] Embed Pods Frameworks */,
+				E0BB7F24DC1852E9D302A100 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +178,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC3FEF921DF6D91400054F91 /* LaunchScreen.storyboard in Resources */,
+				AC3FEF9A1DF6D9B900054F91 /* GoogleService-Info.plist in Resources */,
 				AC3FEF8F1DF6D91400054F91 /* Assets.xcassets in Resources */,
 				AC3FEF8D1DF6D91400054F91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F23381B93EF83D1E6C70841 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shlacker/Pods-Shlacker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A98D85AA7F17597C9E781686 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0BB7F24DC1852E9D302A100 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shlacker/Pods-Shlacker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC3FEF801DF6D91400054F91 /* Sources */ = {
@@ -258,6 +361,7 @@
 		};
 		AC3FEF971DF6D91400054F91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 326AB6CDF3CCE2161620BDCA /* Pods-Shlacker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Shlacker/Info.plist;
@@ -270,6 +374,7 @@
 		};
 		AC3FEF981DF6D91400054F91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B66F1A5D11322DCA48F195 /* Pods-Shlacker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Shlacker/Info.plist;
@@ -299,6 +404,7 @@
 				AC3FEF981DF6D91400054F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

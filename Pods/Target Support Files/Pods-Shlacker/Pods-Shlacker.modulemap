@@ -1,0 +1,6 @@
+framework module Pods_Shlacker {
+  umbrella header "Pods-Shlacker-umbrella.h"
+
+  export *
+  module * { export * }
+}
